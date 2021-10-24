@@ -907,9 +907,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 40px;
+}
+
+.item-getintouch_active {
+  background-color: #252B42;
+  color: #fff;
+}
+
+.item-getintouch_active .item-getintouch__button {
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .item-getintouch__icon {}
+
+.item-getintouch>*:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
 
 .item-getintouch__emails {
   display: flex;
@@ -918,9 +933,43 @@ body {
   align-items: center;
 }
 
-.item-getintouch__label {}
+.item-getintouch__email {
+  color: inherit;
+  font-weight: 600;
+  line-height: 171.4%;
+  letter-spacing: .2px;
+}
 
-.item-getintouch__button {}
+.item-getintouch__email:hover {
+  text-decoration: underline;
+}
+
+.item-getintouch__label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.item-getintouch__button {
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+
+  font-weight: 600;
+  color: #FF7B47;
+  text-align: center;
+
+  border: 1px solid #FF7B47;
+  border-radius: 5px;
+  transition: background 0.3s ease 0s;
+}
+
+.item-getintouch__button:hover {
+  background-color: #FF7B47;
+  color: #fff;
+}
 
 /* ----ПОДВАЛ------------------------------------------------------------------------ */
 .footer {}
