@@ -176,6 +176,8 @@ body {
 
 .page__getintouch {}
 
+.page__contact {}
+
 /* ----HEADER-BLOCK------------------------------------------------------------------------ */
 .header-block {
   text-align: center;
@@ -880,7 +882,7 @@ body {
   }
 }
 
-/* ----ПОДВАЛ------------------------------------------------------------------------ */
+/* ----GET IN TOUCH------------------------------------------------------------------------ */
 
 
 .getintouch {
@@ -894,12 +896,13 @@ body {
 }
 
 .getintouch__items {
-  display: flex;
-  align-items: center;
+  margin: 0px -15px;
 }
 
 .getintouch__item {
   flex: 0 1 33.333%;
+  background-color: #fff;
+  ;
 }
 
 .item-getintouch {
@@ -969,6 +972,97 @@ body {
 .item-getintouch__button:hover {
   background-color: #FF7B47;
   color: #fff;
+}
+
+@media (min-width: 992px) {
+  .getintouch__items {
+    display: flex;
+    align-items: center;
+    margin: 0px 32px;
+  }
+
+  .item-getintouch_active {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .getintouch {
+    padding: 50px 0px;
+  }
+
+  .getintouch__header {
+    margin: 0px 0px 50px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .getintouch__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+/* ----CONTACT------------------------------------------------------------------------ */
+.contact {
+  padding: 40px 0px;
+
+  background-color: #fff;
+}
+
+.contact__container {}
+
+.contact__content {
+  padding: 0px 0px 20px 0px;
+}
+
+@media (min-width: 767px) {
+  .contact__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact__content {
+    padding: 0px 20px 0px 0px;
+  }
+}
+
+
+.contact__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133%;
+  letter-spacing: .1px;
+}
+
+.contact__title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.contact__text {
+  font-weight: 500;
+  color: #737373;
+  line-height: 142.8%;
+  letter-spacing: .2px;
+}
+
+.contact__button {
+  min-height: 58px;
+  padding: 5px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #FF7B47;
+
+  transition: background-color 0.3s ease 0s;
+}
+
+.contact__button:hover {
+  background-color: #be5830;
 }
 
 /* ----ПОДВАЛ------------------------------------------------------------------------ */
