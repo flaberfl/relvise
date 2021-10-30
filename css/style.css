@@ -1027,7 +1027,6 @@ body {
   }
 }
 
-
 .contact__title {
   font-size: 24px;
   font-weight: 700;
@@ -1067,3 +1066,120 @@ body {
 
 /* ----ПОДВАЛ------------------------------------------------------------------------ */
 .footer {}
+
+.footer__top {
+  padding: 50px 0px;
+
+  background-color: #17213C;
+}
+
+.footer__main {}
+
+.footer__row {
+  display: flex;
+  margin: 0px -15px;
+}
+
+.footer__column {
+  flex: 0 1 20%;
+  padding: 0px 15px;
+}
+
+.footer__label {
+  margin: 0px 0px 20px 0px;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .1px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.footer__menu {}
+
+.menu-footer {}
+
+.menu-footer__list {}
+
+.menu-footer__item:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.menu-footer__link {
+  font-weight: 600;
+  line-height: 171.4%;
+  letter-spacing: .2px;
+  color: #fff;
+}
+
+.footer__contacts {}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-footer__item {
+  padding: 0px 0px 0px 34px;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+
+  color: #fff;
+  line-height: 171.4%;
+}
+
+.contacts-footer__item:hover,
+.menu-footer__link:hover {
+  text-decoration: underline;
+}
+
+.contacts-footer__item:not(:last-child) {
+  margin: 0px 0px 12px 0px;
+}
+
+.contacts-footer__item_tel {
+  background: url('../img/footer/01.svg') 0 0 no-repeat;
+}
+
+.contacts-footer__item_map {
+  background: url('../img/footer/02.svg') 0 0 no-repeat;
+}
+
+.contacts-footer__item_mail {
+  background: url('../img/footer/03.svg') 0 0 no-repeat;
+}
+
+.footer__bottom {
+  padding: 25px 0px;
+}
+
+.footer__container {}
+
+@media (min-width: 767px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__copy {
+  font-weight: 600;
+  letter-spacing: .2px;
+  line-height: 171.4%;
+  color: #737373;
+}
+
+.footer__social {}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {}
+
+.social__item:not(:last-child) {
+  margin: 0px 20px 0px 0px;
+}
